@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        // const person = {
+        //     fullname : function(city, country){
+        //         return this.firstname + " " + this.lastname + " " + city + " " + country
+        //     }
+        // }
+
+        // const person1 ={
+        //     firstname : "John",
+        //     lastname : "willium",
+        // } 
+
+        // const person2 = {
+        //     firstname : "Max",
+        //     lastname : "Jonus",
+        // }
+        // document.write(person.fullname.apply(person2, ["Pune", "India"]))
+
+
+        const person = {
+            fullname : function(){
+                return this.firstname + " " + this.lastname 
+            }
+        }
+
+        const member = {
+            firstname : "Max",
+            lastname : "Jonus",
+        }
+        let fullname = person.fullname.bind(member)
+        document.write(fullname())
+
+
+
+
+
+
+     </script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
