@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <script>
+        // let person = new Object()
+        // person.name = "Ammy";
+        // person.age = 22;
+        // person.role = "Fashion designer";
+        // person.say_name = function(){
+        //     alert(this.name)
+        // }
+        // person.say_name()
+
+
+        // syntax
+        // class classname{
+        //     constuctor(parameter){ 
+        //     this.prameter = parameter
+        // }
+        // methods
+          
+
+        // }
+
+        // class emp{
+        //     constuctor(name, age){
+        //         this.name = name,
+        //         this.age = age
+        //     }
+        // } 
+
+        // const e = new emp("paddy", 22)
+        // document.write(e.name)
+        // document.write(e.age)
+
+
+        class calculator{
+            constructor(first_num, second_num){
+                this.first_num = first_num
+                this.second_num = second_num
+            }
+        
+
+        sum() {
+            document.write(this.first_num + this.second_num + "<br>")
+        }
+
+        sub() {
+            document.write(this.first_num - this.second_num + "<br>")
+        }
+
+        mult() {
+            document.write(this.first_num * this.second_num + "<br>")
+        }
+
+        div() {
+            document.write(this.first_num / this.second_num + "<br>")
+        }
+      }
+
+        let c = new calculator(10, 30)
+        c.sum()
+        c.sub()
+        c.mult()
+        c.div()
+
+        
+
+
+
+
+      </script>
+
+
+</body>
+</html>
