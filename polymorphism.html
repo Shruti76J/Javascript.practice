@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Cat{
+            constructor(name){
+                this.name = name
+            }
+
+            display(){
+                // console.log("Name of the cat is "+ this.name);
+                document.write("Name of the cat is "+ this.name);
+            }
+        }
+
+        const c = new Cat("kitty")
+
+        class Dog{
+            constructor(name){
+                this.name = name
+            }
+
+            display(){
+                // console.log("Name of the dog is "+ this.name);
+                document.write("Name of the dog is "+ this.name);
+            }
+        }
+
+        const d = new Dog("Rocky")
+
+        function info(a){
+            a.display()
+        }
+        info(d)
+
+
+
+
+    </script>
+</body>
+</html>
